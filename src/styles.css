@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic-ext');
+
+html, body {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  color: rgb(8, 8, 8);
+}

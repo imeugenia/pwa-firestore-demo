@@ -1,0 +1,5 @@
+export const WHITE = 'rgb(252, 252, 252)'
+export const LIGHT_GREY = 'rgb(238, 238, 238)'
+export const GREEN = 'rgb(33, 150, 83)'
+export const BLACK = 'rgb(20, 20, 20)'
+export const GRAY = 'rgb(92, 92, 92)'
