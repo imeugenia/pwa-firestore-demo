@@ -1,18 +1,14 @@
 import React from 'react'
 import { Card, CardHeader, CardText } from 'material-ui/Card'
 import { createComponent, createComponentWithProxy } from 'react-fela'
-import isEmpty from 'lodash/isEmpty'
 import DateIcon from 'material-ui/svg-icons/action/date-range'
-import EditIcon from 'material-ui/svg-icons/editor/mode-edit'
 import DeleteIcon from 'material-ui/svg-icons/action/delete'
-import Popover from 'material-ui/Popover'
-import Menu from 'material-ui/Menu'
-import MenuItem from 'material-ui/MenuItem'
 import IconButton from 'material-ui/IconButton'
 import Divider from 'material-ui/Divider'
 import Title from '../Title'
 import formatDate from '../../helpers/formatDate'
 import styles, { button, icon, header } from './styles'
+import { ROSE, GREEN } from '../../variables'
 
 const CardBox = createComponentWithProxy(styles.card, Card)
 const Deadline = createComponentWithProxy(styles.date, 'span')
@@ -37,11 +33,11 @@ const ProjectCard = props => {
           </IconButton>
         </div>
       </CardHeader>
-      <CardText>{doc.description}</CardText>
+      <CardText>{description}</CardText>
       <Divider />
       <Footer>
         <DateBox>
-          <DateIcon color={'#ff6f56'} />
+          <DateIcon color={ROSE} />
           <Deadline>{date}</Deadline>
         </DateBox>
       </Footer>

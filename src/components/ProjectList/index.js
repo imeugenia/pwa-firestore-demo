@@ -8,6 +8,7 @@ import FlatButton from 'material-ui/FlatButton'
 import DatePicker from 'material-ui/DatePicker'
 import TextField from 'material-ui/TextField'
 import { addButton } from './styles'
+import { ROSE, GREEN } from '../../variables'
 
 class ProjectList extends React.Component {
   state = {
@@ -74,7 +75,7 @@ class ProjectList extends React.Component {
         ))}
         <FloatingActionButton
           style={addButton}
-          backgroundColor={'#ff6f56'}
+          backgroundColor={ROSE}
           onClick={this.handleOpen}
         >
           <ContentAdd />
